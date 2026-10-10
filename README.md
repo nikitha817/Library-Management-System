@@ -68,20 +68,20 @@ When you add a book or borrow something, it saves to JSON files (`books.json` an
 
 ```json
 {
-  "books": {
-    "1984": {
-      "author": "George Orwell",
-      "copies": 5,
-      "borrowed": 2
+  "books": [
+    {
+        "title": "python basics",
+        "author": "john smith",
+        "quantity": 3,
+        "year": 2024
     }
-  },
-  "borrowers": {
-    "Raj": {
-      "book": "1984",
-      "borrow_date": "2026-07-23",
-      "due_date": "2026-08-06"
+],
+  "borrowers": [
+    {
+        "name": "priya",
+        "borrowed_books": []
     }
-  }
+]
 }
 ```
 
