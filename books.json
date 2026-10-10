@@ -4,5 +4,12 @@
         "author": "david",
         "quantity": 8,
         "year": 1957
+    },
+    {
+    "1984": {
+      "author": "George Orwell",
+      "copies": 5,
+      "borrowed": 2
+    }
     }
 ]
