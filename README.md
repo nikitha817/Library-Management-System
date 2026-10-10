@@ -107,19 +107,40 @@ When you add a book or borrow something, it saves to JSON files (`books.json` an
 7. Delete Book
 8. Exit
 
-Choose: 1
+Enter your choice: 1
 
 Enter book name: Python Basics
-Enter author: John Smith
+Enter book author: John Smith
 How many copies? 3
+Enter book year: 2024
+Book added successfully.
 
-Book added! ✓
-
-Choose: 4
+Enter your choice: 4
+----------------------------------------
+Title       : python basics
+Author      : john smith
+Quantity    : 3
+Year        : 2024
 Enter borrower name: Priya
-Enter book to borrow: Python Basics
+Enter book title to borrow: Pthon Basics
+Enter book author: John smith
+Borrower priya not found.
+Add the borrower first before borrowing a book.
 
-Book borrowed until 2026-08-06 ✓
+Enter your choice: 3
+Enter borrower name: Priya
+Borrower added successfully.
+
+Enter your choice: 4
+----------------------------------------
+Title       : python basics
+Author      : john smith
+Quantity    : 3
+Year        : 2024
+Enter borrower name: Priya
+Enter book title to borrow: python basics
+Enter book author: John Smith
+python basics borrowed successfully by priya.
 ```
 
 ## Things I Could Add Later

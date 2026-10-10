@@ -19,7 +19,7 @@ def add_books():
     book_title = input("Enter book title: ").lower().strip()
     book_author = input("Enter book author: ").strip().lower()  
     try:
-        book_quantity = int(input("Enter book quantity: "))
+        book_quantity = int(input("How many copies?  "))
         book_year = int(input("Enter book year: "))
         if book_quantity < 0 or book_year < 0:
             print("Quantity and year cannot be negative. Please enter valid values.\n")
@@ -50,7 +50,7 @@ def view_books():
         return
     for book in Books:
         print("-" * 40)
-        print(f"{"Title":<12}: {book['title']}\n{"Author":<12}: {book['author']}\n{"Quantity":<12}: {book['quantity']}\n{"Year":<12}: {book['year']}")
+        print(f"{"Title":<12}: {book.get('title', 'N/A')}\n{"Author":<12}: {book.get('author', 'N/A')}\n{"Quantity":<12}: {book.get('quantity', 'N/A')}\n{"Year":<12}: {book.get('year', 'N/A')}")
 def add_borrowers():
     borrower_name = input("Enter borrower name: ").strip().lower()
     if borrower_name == "":
@@ -119,7 +119,7 @@ def returned_info():
     if borrower_name == "":
         print("Borrower name cannot be empty.")
         return
-    returned_book_title = input("Enter book title to borrow: ").lower().strip()
+    returned_book_title = input("Enter book title to return: ").lower().strip()
     if returned_book_title == "":
         print("Returned book cannot be empty. ")
         return
@@ -132,7 +132,7 @@ def return_books():
     if not Borrowers:
         print("No Borrowers fround.")
         return
-    result = borrower_info()
+    result = returned_info()
     if not result:
         return
     returned_book_title, returned_book_author, borrower_name = result

@@ -1,13 +1,6 @@
 [
     {
-        "name": "fun",
+        "name": "priya",
         "borrowed_books": []
-    },
-    {
-    "Raj": {
-      "book": "1984",
-      "borrow_date": "2026-07-23",
-      "due_date": "2026-08-06"
     }
-  }
 ]
